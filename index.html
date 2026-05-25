@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MAURTIAN — Auberge, camping désert, location 4x4 et guide touristique à Atar, Adrar, Mauritanie. Vivez l'aventure saharienne.">
+  <meta property="og:title" content="MAURTIAN | Tourisme & Aventure à Atar">
+  <meta property="og:description" content="Découvrez l'Adrar mauritanien avec MAURTIAN — hébergement, bivouac, guides locaux et location de véhicules.">
+  <title>MAURTIAN | Tourisme & Aventure · Atar, Adrar</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ═══════════════ NAVBAR ═══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="logo">
+        <svg class="logo-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 4 L36 34 L20 28 L4 34 Z" fill="currentColor" opacity="0.9"/>
+          <path d="M20 14 L28 34 L20 30 L12 34 Z" fill="currentColor" opacity="0.4"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-name">MAURTIAN</span>
+          <span class="logo-sub">Atar · Adrar</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#gallery" class="nav-link">Galerie</a></li>
+        <li><a href="#about" class="nav-link">À Propos</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Réserver</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-sky"></div>
+    <div class="hero-dunes">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,200 C180,140 360,260 560,200 C760,140 900,280 1100,210 C1250,155 1360,230 1440,200 L1440,320 L0,320 Z" fill="#7B3C18" opacity="0.55"/>
+        <path d="M0,240 C200,190 380,290 600,240 C820,190 1020,300 1200,245 C1320,210 1390,260 1440,245 L1440,320 L0,320 Z" fill="#5C2810" opacity="0.65"/>
+        <path d="M0,270 C240,230 440,300 680,265 C900,232 1100,310 1300,270 C1380,252 1420,275 1440,270 L1440,320 L0,320 Z" fill="#3D1A08" opacity="0.8"/>
+      </svg>
+    </div>
+    <div class="stars-container" id="starsContainer"></div>
+    <div class="hero-content">
+      <div class="hero-inner">
+        <span class="hero-tag">
+          <i class="fas fa-location-dot"></i>
+          Atar · Wilaya de l'Adrar · Mauritanie
+        </span>
+        <h1 class="hero-title">
+          Le Sahara<br>
+          <em>comme vous</em><br>
+          ne l'avez jamais vécu
+        </h1>
+        <p class="hero-desc">
+          Auberge authentique · Bivouac sous les étoiles · Location 4x4 · Guides locaux
+        </p>
+        <div class="hero-btns">
+          <a href="#services" class="btn btn-sand">
+            Nos services <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-outline-light">
+            Planifier mon voyage
+          </a>
+        </div>
+      </div>
+    </div>
+    <a href="#services" class="hero-scroll" aria-label="Défiler">
+      <span>Découvrir</span>
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ═══════════════ STATS STRIP ═══════════════ -->
+  <section class="stats-strip">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-num"><span class="counter" data-target="500">0</span>+</div>
+        <p>Voyageurs accueillis</p>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <div class="stat-num"><span class="counter" data-target="12">0</span></div>
+        <p>Années d'expérience</p>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <div class="stat-num"><span class="counter" data-target="15">0</span></div>
+        <p>Circuits proposés</p>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <div class="stat-num"><span class="counter" data-target="4">0</span></div>
+        <p>Services disponibles</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SERVICES ═══════════════ -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-head" data-anim>
+        <span class="section-label">Ce que nous proposons</span>
+        <h2 class="section-title">Nos Services</h2>
+        <p class="section-sub">Une expérience complète pour explorer les merveilles de l'Adrar mauritanien</p>
+      </div>
+      <div class="services-grid">
+
+        <article class="svc-card" data-anim data-delay="0">
+          <div class="svc-icon">
+            <i class="fas fa-house-chimney"></i>
+          </div>
+          <h3>Auberge</h3>
+          <p>Chambres confortables et authentiques au cœur d'Atar. Petit-déjeuner mauritanien, terrasse et accueil chaleureux.</p>
+          <ul class="svc-list">
+            <li><i class="fas fa-check"></i>Chambres privées &amp; dortoirs</li>
+            <li><i class="fas fa-check"></i>Petit-déjeuner inclus</li>
+            <li><i class="fas fa-check"></i>Wi-Fi disponible</li>
+            <li><i class="fas fa-check"></i>Terrasse panoramique</li>
+          </ul>
+          <a href="#contact" class="svc-link">Réserver <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="svc-card svc-featured" data-anim data-delay="100">
+          <div class="svc-badge">Le plus populaire</div>
+          <div class="svc-icon">
+            <i class="fas fa-campground"></i>
+          </div>
+          <h3>Camping Désert</h3>
+          <p>Dormez sous un ciel d'étoiles au cœur des dunes de l'Adrar. Une nuit de bivouac inoubliable dans le silence du Sahara.</p>
+          <ul class="svc-list">
+            <li><i class="fas fa-check"></i>Bivouac en dunes</li>
+            <li><i class="fas fa-check"></i>Repas traditionnel</li>
+            <li><i class="fas fa-check"></i>Feu de camp &amp; thé</li>
+            <li><i class="fas fa-check"></i>Équipement fourni</li>
+          </ul>
+          <a href="#contact" class="svc-link">Réserver <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="svc-card" data-anim data-delay="200">
+          <div class="svc-icon">
+            <i class="fas fa-car-side"></i>
+          </div>
+          <h3>Location</h3>
+          <p>4x4 tout-terrain, motos, équipements de camping et matériel de randonnée pour explorer librement la région.</p>
+          <ul class="svc-list">
+            <li><i class="fas fa-check"></i>4x4 tout-terrain</li>
+            <li><i class="fas fa-check"></i>Motos &amp; quads</li>
+            <li><i class="fas fa-check"></i>Tentes &amp; équipements</li>
+            <li><i class="fas fa-check"></i>GPS &amp; cartes</li>
+          </ul>
+          <a href="#contact" class="svc-link">Réserver <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="svc-card" data-anim data-delay="300">
+          <div class="svc-icon">
+            <i class="fas fa-compass"></i>
+          </div>
+          <h3>Guide Touristique</h3>
+          <p>Nos guides locaux vous emmènent à Chinguetti, aux oasis, aux gravures rupestres et aux trésors cachés de l'Adrar.</p>
+          <ul class="svc-list">
+            <li><i class="fas fa-check"></i>Circuits sur mesure</li>
+            <li><i class="fas fa-check"></i>Guides francophones</li>
+            <li><i class="fas fa-check"></i>Visites culturelles</li>
+            <li><i class="fas fa-check"></i>Randonnées camelières</li>
+          </ul>
+          <a href="#contact" class="svc-link">Réserver <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ GALLERY ═══════════════ -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-head" data-anim>
+        <span class="section-label">Nos paysages</span>
+        <h2 class="section-title">L'Adrar en Images</h2>
+        <p class="section-sub">Des horizons infinis qui n'attendent que vous</p>
+      </div>
+      <div class="gallery-grid" data-anim>
+        <div class="gal-item gal-tall" style="--grad: linear-gradient(170deg,#F4A340 0%,#E06B1A 45%,#8B3A0F 80%,#3D1A08 100%)">
+          <div class="gal-overlay"><i class="fas fa-mountain-sun"></i><span>Dunes de l'Adrar</span></div>
+        </div>
+        <div class="gal-item" style="--grad: radial-gradient(ellipse at 25% 75%,#0D0820 0%,#1A1240 50%,#2E1C6A 100%)">
+          <div class="gal-overlay"><i class="fas fa-star"></i><span>Nuit étoilée</span></div>
+        </div>
+        <div class="gal-item" style="--grad: linear-gradient(180deg,#6CB4E4 0%,#4A90D9 30%,#4A7B5A 65%,#2D5E3A 100%)">
+          <div class="gal-overlay"><i class="fas fa-water"></i><span>Oasis de Terjit</span></div>
+        </div>
+        <div class="gal-item gal-wide" style="--grad: linear-gradient(160deg,#ECC084 0%,#C8A060 35%,#8B6030 65%,#4A2C10 100%)">
+          <div class="gal-overlay"><i class="fas fa-mosque"></i><span>Chinguetti · Patrimoine UNESCO</span></div>
+        </div>
+        <div class="gal-item" style="--grad: linear-gradient(135deg,#D4813A 0%,#A85C28 45%,#5C2E10 100%)">
+          <div class="gal-overlay"><i class="fas fa-truck-monster"></i><span>Expédition 4x4</span></div>
+        </div>
+        <div class="gal-item" style="--grad: linear-gradient(180deg,#FF9D4A 0%,#E8601A 40%,#C02800 70%,#6A0E00 100%)">
+          <div class="gal-overlay"><i class="fas fa-sun"></i><span>Coucher de soleil</span></div>
+        </div>
+      </div>
+      <p class="gallery-note" data-anim>
+        <i class="fas fa-camera"></i>
+        Galerie photo à enrichir avec vos propres clichés — chaque aventure mérite d'être partagée
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ABOUT ═══════════════ -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visuals" data-anim>
+          <div class="about-card-main" style="background: linear-gradient(160deg,#C8A07A 0%,#8B5E3C 45%,#4A2C1A 100%)">
+            <div class="about-card-label">
+              <i class="fas fa-star"></i>
+              <span>Depuis 2012</span>
+            </div>
+          </div>
+          <div class="about-card-side" style="background: linear-gradient(160deg,#4A7B5A 0%,#2D5E3A 100%)">
+            <i class="fas fa-route"></i>
+            <strong>15 circuits</strong>
+            <span>disponibles</span>
+          </div>
+          <div class="about-card-accent">
+            <i class="fas fa-globe-africa"></i>
+            <strong>Adrar</strong>
+            <span>Mauritanie</span>
+          </div>
+        </div>
+        <div class="about-content" data-anim>
+          <span class="section-label">Notre histoire</span>
+          <h2 class="section-title">Une passion pour l'Adrar</h2>
+          <p>Née d'un amour profond pour la région de l'Adrar et ses peuples, <strong>MAURTIAN</strong> est votre porte d'entrée vers les merveilles du Sahara mauritanien.</p>
+          <p>Depuis notre base à <strong>Atar</strong>, ville-carrefour de l'Adrar, nous vous proposons des expériences authentiques — de l'auberge au bivouac en dunes, des excursions vers <strong>Chinguetti</strong> (ville des caravanes, classée au patrimoine mondial de l'UNESCO) aux bains dans l'oasis de Terjit.</p>
+          <div class="values-list">
+            <div class="value-item">
+              <div class="value-icon"><i class="fas fa-leaf"></i></div>
+              <div>
+                <h4>Tourisme responsable</h4>
+                <p>Nous respectons l'environnement et soutenons les communautés locales.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon"><i class="fas fa-handshake"></i></div>
+              <div>
+                <h4>Hospitalité mauritanienne</h4>
+                <p>L'accueil est au cœur de tout ce que nous faisons.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon"><i class="fas fa-shield-halved"></i></div>
+              <div>
+                <h4>Sécurité &amp; fiabilité</h4>
+                <p>Guides certifiés, équipements vérifiés, assistance 24h/24.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ DESTINATIONS ═══════════════ -->
+  <section class="destinations-strip">
+    <div class="dest-inner">
+      <span class="dest-title">Nos destinations phares</span>
+      <div class="dest-list">
+        <div class="dest-item">
+          <i class="fas fa-mosque"></i>
+          <strong>Chinguetti</strong>
+          <small>Patrimoine UNESCO</small>
+        </div>
+        <div class="dest-sep">—</div>
+        <div class="dest-item">
+          <i class="fas fa-water"></i>
+          <strong>Oasis de Terjit</strong>
+          <small>Palmeraie &amp; sources</small>
+        </div>
+        <div class="dest-sep">—</div>
+        <div class="dest-item">
+          <i class="fas fa-mountain"></i>
+          <strong>Plateau de l'Adrar</strong>
+          <small>Panoramas uniques</small>
+        </div>
+        <div class="dest-sep">—</div>
+        <div class="dest-item">
+          <i class="fas fa-wind"></i>
+          <strong>Désert de l'Erg</strong>
+          <small>Dunes à l'infini</small>
+        </div>
+        <div class="dest-sep">—</div>
+        <div class="dest-item">
+          <i class="fas fa-image"></i>
+          <strong>Art rupestre</strong>
+          <small>Gravures millénaires</small>
+        </div>
+        <div class="dest-sep">—</div>
+        <div class="dest-item">
+          <i class="fas fa-city"></i>
+          <strong>Ouadane</strong>
+          <small>Cité caravanière</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CONTACT ═══════════════ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info" data-anim>
+          <span class="section-label">Nous contacter</span>
+          <h2 class="section-title">Planifiez votre aventure</h2>
+          <p>Prêt à partir ? Décrivez-nous votre projet et nous construisons votre séjour sur mesure.</p>
+
+          <div class="cinfo-list">
+            <div class="cinfo-item">
+              <div class="cinfo-icon"><i class="fas fa-map-location-dot"></i></div>
+              <div>
+                <h4>Adresse</h4>
+                <p>Atar, Wilaya de l'Adrar<br>Mauritanie</p>
+              </div>
+            </div>
+            <div class="cinfo-item">
+              <div class="cinfo-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <h4>Téléphone</h4>
+                <p>+222 XX XX XX XX</p>
+              </div>
+            </div>
+            <div class="cinfo-item">
+              <div class="cinfo-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>Email</h4>
+                <p>contact@maurtian.mr</p>
+              </div>
+            </div>
+            <div class="cinfo-item">
+              <div class="cinfo-icon"><i class="fab fa-whatsapp"></i></div>
+              <div>
+                <h4>WhatsApp</h4>
+                <p>Disponible 7j/7</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-row">
+            <a href="#" class="soc-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="soc-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="soc-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="soc-btn" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap" data-anim>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Nom complet *</label>
+                <input type="text" id="fname" name="name" placeholder="Votre nom" required>
+              </div>
+              <div class="form-group">
+                <label for="femail">Email *</label>
+                <input type="email" id="femail" name="email" placeholder="votre@email.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fservice">Service souhaité</label>
+              <select id="fservice" name="service">
+                <option value="">— Choisir un service —</option>
+                <option value="auberge">Auberge / Hébergement</option>
+                <option value="camping">Camping Désert</option>
+                <option value="location">Location (4x4, équipements)</option>
+                <option value="guide">Guide Touristique</option>
+                <option value="pack">Pack complet sur mesure</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="farrival">Date d'arrivée</label>
+                <input type="date" id="farrival" name="arrival">
+              </div>
+              <div class="form-group">
+                <label for="fpersons">Nombre de personnes</label>
+                <input type="number" id="fpersons" name="persons" min="1" max="30" placeholder="1">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Votre message</label>
+              <textarea id="fmessage" name="message" rows="4" placeholder="Décrivez votre projet de voyage, vos attentes…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-sand btn-full">
+              Envoyer ma demande <i class="fas fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-circle-check"></i>
+              Message envoyé ! Nous vous répondrons sous 24h.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#home" class="logo logo-light">
+          <svg class="logo-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 4 L36 34 L20 28 L4 34 Z" fill="currentColor" opacity="0.9"/>
+            <path d="M20 14 L28 34 L20 30 L12 34 Z" fill="currentColor" opacity="0.4"/>
+          </svg>
+          <div class="logo-text">
+            <span class="logo-name">MAURTIAN</span>
+            <span class="logo-sub">Atar · Adrar</span>
+          </div>
+        </a>
+        <p>Votre partenaire pour explorer l'Adrar mauritanien. Authenticité, aventure et hospitalité depuis Atar.</p>
+        <div class="social-row">
+          <a href="#" class="soc-btn soc-sm" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="soc-btn soc-sm" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="soc-btn soc-sm" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Galerie</a></li>
+          <li><a href="#about">À Propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Nos services</h4>
+        <ul>
+          <li><a href="#contact">Auberge</a></li>
+          <li><a href="#contact">Camping Désert</a></li>
+          <li><a href="#contact">Location 4x4</a></li>
+          <li><a href="#contact">Guide Touristique</a></li>
+          <li><a href="#contact">Pack sur mesure</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Destinations</h4>
+        <ul>
+          <li><a href="#contact">Chinguetti</a></li>
+          <li><a href="#contact">Oasis de Terjit</a></li>
+          <li><a href="#contact">Ouadane</a></li>
+          <li><a href="#contact">Désert de l'Erg</a></li>
+          <li><a href="#contact">Art rupestre</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 MAURTIAN · Atar, Mauritanie · Tous droits réservés</p>
+      <p>Fait avec <i class="fas fa-heart"></i> pour l'Adrar</p>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Retour en haut">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
