@@ -979,3 +979,48 @@ p  { color: var(--text-mid); line-height: 1.75; }
   .dest-sep { display: none; }
   .dest-item { padding: 0; }
 }
+
+/* 1. Assurez-vous que l'item parent est en position relative */
+.gal-item {
+  position: relative;
+  overflow: hidden;
+  background-color: #3d1d11; /* La couleur marron de fond */
+  border-radius: 12px; /* Si vous avez des coins arrondis */
+}
+
+/* 2. FORCEZ l'image à être visible et à prendre toute la place */
+.gal-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+  opacity: 1 !important; /* Force l'image à ne pas être transparente */
+}
+
+/* 3. L'overlay doit être AU-DESSUS de l'image, et invisible par défaut */
+.gal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(61, 29, 17, 0.7); /* Fond marron semi-transparent au survol */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  opacity: 0; /* Invisible au départ */
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+/* 4. Au survol (Hover) : Zoom sur l'image et apparition de l'overlay */
+.gal-item:hover img {
+  transform: scale(1.1);
+}
+
+.gal-item:hover .gal-overlay {
+  opacity: 1; /* L'overlay apparaît proprement au survol */
+}
