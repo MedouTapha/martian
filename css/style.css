@@ -230,24 +230,21 @@ p  { color: var(--text-mid); line-height: 1.75; }
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: linear-gradient(180deg,
-    #0E0608 0%,
-    #1C0C06 12%,
-    #3A1A0A 25%,
-    #6B3010 42%,
-    #A85C20 60%,
-    #D08538 78%,
-    #E8A84A 90%,
-    #F0C060 100%
-  );
+  background-image:
+    linear-gradient(180deg,
+      rgba(10,4,2,0.82) 0%,
+      rgba(20,8,4,0.65) 25%,
+      rgba(38,16,6,0.48) 55%,
+      rgba(70,30,10,0.30) 80%,
+      rgba(90,40,12,0.18) 100%
+    ),
+    url('https://images.unsplash.com/photo-LzVB84KkZOE?auto=format&fit=crop&w=1920&q=85');
+  background-size: cover;
+  background-position: center 40%;
+  background-attachment: fixed;
 }
-.hero-sky {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(ellipse 80% 50% at 50% 20%,
-    rgba(255, 180, 80, 0.12) 0%,
-    transparent 70%
-  );
+@media (max-width: 768px) {
+  .hero { background-attachment: scroll; }
 }
 .hero-dunes {
   position: absolute;
@@ -504,27 +501,32 @@ p  { color: var(--text-mid); line-height: 1.75; }
   gap: 16px;
 }
 .gal-item {
-  background: var(--grad);
+  background: var(--brown-dark);
   border-radius: var(--radius-md);
   position: relative;
   overflow: hidden;
   cursor: pointer;
 }
-.gal-item.gal-tall {
-  grid-row: span 2;
+.gal-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.65s var(--ease-out);
 }
-.gal-item.gal-wide {
-  grid-column: span 2;
-}
+.gal-item:hover img { transform: scale(1.07); }
+.gal-item.gal-tall { grid-row: span 2; }
+.gal-item.gal-wide { grid-column: span 2; }
 .gal-item::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(160deg, transparent 40%, rgba(0,0,0,0.5) 100%);
-  opacity: 0;
+  background: linear-gradient(170deg, transparent 30%, rgba(0,0,0,0.55) 100%);
+  opacity: 0.4;
   transition: opacity var(--transition);
+  z-index: 1;
 }
-.gal-item:hover::after { opacity: 1; }
+.gal-item:hover::after { opacity: 0.7; }
 .gal-overlay {
   position: absolute;
   bottom: 0; left: 0; right: 0;
@@ -535,11 +537,11 @@ p  { color: var(--text-mid); line-height: 1.75; }
   color: var(--white);
   font-size: 0.9rem;
   font-weight: 500;
-  background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, transparent 100%);
+  background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, transparent 100%);
   transform: translateY(6px);
   opacity: 0;
   transition: opacity var(--transition), transform var(--transition);
-  z-index: 1;
+  z-index: 2;
 }
 .gal-item:hover .gal-overlay {
   opacity: 1;
@@ -590,6 +592,12 @@ p  { color: var(--text-mid); line-height: 1.75; }
   height: 75%;
   border-radius: var(--radius-lg);
   box-shadow: 0 30px 80px rgba(61, 26, 8, 0.25);
+  overflow: hidden;
+  background-image:
+    linear-gradient(160deg, rgba(200,160,122,0.2) 0%, rgba(61,26,8,0.55) 100%),
+    url('https://images.unsplash.com/photo-BGoYb4Jutfc?auto=format&fit=crop&w=900&q=80');
+  background-size: cover;
+  background-position: center;
 }
 .about-card-label {
   position: absolute;
